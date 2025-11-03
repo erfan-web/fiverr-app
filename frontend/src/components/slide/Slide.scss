@@ -1,0 +1,41 @@
+.slide {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0px;
+
+  .container {
+    width: 1400px;
+    position: relative;
+  }
+  .swiper {
+    width: 100%;
+  }
+  .button-prev,
+  .button-next {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 100;
+    border: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover{
+      color: rgb(199, 46, 46);
+    }
+  }
+
+  .button-prev {
+    left: -25px;
+  }
+  .button-next {
+    right: 0;
+  }
+}
